@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:foregroundTint="#888888"
     tools:context=".MainActivity">
 
     <ImageView
@@ -45,7 +47,27 @@
             android:layout_height="wrap_content"
             android:text="@string/artist_monthly_listeners"
             android:textColor="@color/white" />
+
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/star_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/star_desc"
+        android:cropToPadding="false"
+        android:focusable="true"
+        android:scaleType="center"
+        app:backgroundTint="@color/white"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/laufey_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laufey_iv"
+        app:srcCompat="@drawable/baseline_star_24"
+        app:tint="@color/star_default"
+        app:useCompatPadding="false" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/page_content_cl"
@@ -144,6 +166,7 @@
             android:id="@+id/purchase_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
             android:text="@string/purchase_text_ready"
             app:layout_constraintBottom_toBottomOf="@+id/tour_details_ll"
             app:layout_constraintEnd_toEndOf="parent"
