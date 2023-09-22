@@ -18,4 +18,9 @@
     <string name="purchase_text_clicked">Purchased</string>
 
     <string name="discography_text">Discography</string>
+
+    <string name="album_name_from_the_start">From the Start</string>
+    <string name="album_name_typical_of_me">Typical of Me</string>
+    <string name="album_desc_from_the_start">Laufey\'s Single "From the Start"</string>
+    <string name="album_desc_typical_of_me">Laufey\'s Album "Typical of Me"</string>
 </resources>
