@@ -16,4 +16,6 @@
 
     <string name="purchase_text_ready">Purchase</string>
     <string name="purchase_text_clicked">Purchased</string>
+
+    <string name="discography_text">Discography</string>
 </resources>
