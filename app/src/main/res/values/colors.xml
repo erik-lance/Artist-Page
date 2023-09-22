@@ -3,4 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="dark">#4A4A4A</color>
+    <color name="star_default">#808080</color>
+    <color name="star_pressed">#FFC200</color>
+
+    <color name="purchase_text_pressed">#AAA6AA</color>
+    <color name="purchase_default">#6859A9</color>
+    <color name="purchase_pressed">#3C3C3C</color>
+
 </resources>
