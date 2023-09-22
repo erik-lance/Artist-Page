@@ -20,6 +20,7 @@
         app:srcCompat="@drawable/laufey" />
 
     <LinearLayout
+        android:id="@+id/artist_details_ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="bottom"
@@ -47,6 +48,7 @@
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/page_content_cl"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="10dp"
