@@ -45,10 +45,12 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tour_text_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/tour_text"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/laufey_iv" />
 
     <LinearLayout
@@ -58,7 +60,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8">
+        app:layout_constraintTop_toBottomOf="@+id/tour_text_tv">
 
         <LinearLayout
             android:id="@+id/tour_date_ll"
