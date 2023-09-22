@@ -5,6 +5,8 @@
     <string name="artist_name">Laufey</string>
     <string name="artist_monthly_listeners">13,454,050 monthly listeners</string>
 
+    <string name="star_desc">Favorite Laufey</string>
+
     <string name="tour_text">On Tour</string>
 
     <string name="tour_month">Sep</string>
