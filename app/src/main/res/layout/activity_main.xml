@@ -44,79 +44,94 @@
             android:textColor="@color/white" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tour_text_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tour_text"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/laufey_iv" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tour_text_tv">
+        app:layout_constraintTop_toBottomOf="@+id/laufey_iv"
+        app:layout_constraintVertical_bias="1.0">
 
-        <LinearLayout
-            android:id="@+id/tour_date_ll"
+        <TextView
+            android:id="@+id/tour_text_tv"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@color/dark"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/tour_month_tv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tour_month"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tour_day_tv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tour_day"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:text="@string/tour_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:id="@+id/tour_details_ll"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="5dp"
-            android:orientation="vertical">
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tour_text_tv">
 
-            <TextView
-                android:id="@+id/tour_city_tv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tour_city"
-                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/tour_date_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/dark"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-            <TextView
-                android:id="@+id/tour_venue_tv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tour_venue" />
+                <TextView
+                    android:id="@+id/tour_month_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tour_month"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tour_time_tv"
+                <TextView
+                    android:id="@+id/tour_day_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tour_day"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tour_details_ll"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tour_time" />
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tour_city_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tour_city"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tour_venue_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tour_venue" />
+
+                <TextView
+                    android:id="@+id/tour_time_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tour_time" />
+            </LinearLayout>
+
         </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
