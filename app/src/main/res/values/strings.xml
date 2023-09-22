@@ -13,4 +13,7 @@
     <string name="tour_city">Beijing</string>
     <string name="tour_venue">Poly Theatre</string>
     <string name="tour_time">Tue 8:00 PM</string>
+
+    <string name="purchase_text_ready">Purchase</string>
+    <string name="purchase_text_clicked">Purchased</string>
 </resources>

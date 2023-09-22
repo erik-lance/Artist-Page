@@ -72,6 +72,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +81,8 @@
             <LinearLayout
                 android:id="@+id/tour_date_ll"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
                 android:background="@color/dark"
                 android:gravity="center"
                 android:orientation="vertical"
@@ -108,9 +110,10 @@
 
             <LinearLayout
                 android:id="@+id/tour_details_ll"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
+                android:layout_weight="2"
                 android:orientation="vertical">
 
                 <TextView
@@ -132,6 +135,13 @@
                     android:layout_height="wrap_content"
                     android:text="@string/tour_time" />
             </LinearLayout>
+
+            <Button
+                android:id="@+id/purchase_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/purchase_text_ready" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
