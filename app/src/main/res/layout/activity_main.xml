@@ -13,13 +13,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:alpha="0.7"
+        android:alpha="0.8"
         android:background="@color/black"
         android:contentDescription="@string/laufey_iv_content_description"
+        android:tintMode="src_atop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/laufey" />
+        app:srcCompat="@drawable/laufey"
+        app:tint="#6F000000" />
 
     <LinearLayout
         android:id="@+id/artist_details_ll"
@@ -204,7 +206,7 @@
                 android:orientation="horizontal"
                 app:constraint_referenced_ids="discography_album_2_ll,discography_album_1_ll"
                 app:flow_horizontalAlign="center"
-                app:flow_horizontalGap="25dp"
+                app:flow_horizontalGap="50dp"
                 app:flow_maxElementsWrap="2"
                 app:flow_verticalAlign="top"
                 app:flow_verticalGap="25dp"
